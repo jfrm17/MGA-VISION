@@ -31,15 +31,10 @@ main {
 /* ===============================
    HEADER
 ================================ */
+
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 50px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
 
   /* Papier froissé bleu */
   background-image: 
@@ -47,11 +42,71 @@ main {
     url("images/header-texture.png");
   background-repeat: repeat;
   background-size: cover;
+  
+    padding: 5px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+header p{
+  display: flex;
+  align-items: center;
+
+}
+
+.header1 {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.paginationTot{
+
+}
+
+/* PAGINATION */
+
+
+.pagination-consigne{
+text-align: center;
+
+	color: blue;
+}
+
+/* Pagination Bouton et compteur */
+.pagination {
+  bottom: 1%;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  margin: 10px 15px; 
+  gap: 10px; /* espace entre les boutons et le compteur */
+}
+
+.pagination button {
+  font-size: 15px;
+  background: #78001e; /* rouge bordeaux */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.pagination span {
+  color: blue;
+  font-weight: bold;
+  padding: 0 8px; /* espace autour du compteur pour ne pas coller aux boutons */
 }
 
 /* LOGO */
 .logo img {
-  display: flex;
   height: 50px;
 }
 
@@ -59,24 +114,19 @@ main {
   height: 150px;
 }
 
-
 /* MENU */
 .navbar {
-  zoom: 80%;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .iconNavBar img {
-  zoom: 110%;
-  position: relative;
-  height: 20px;
+  height: 30px;
 }
 
 .navbar a {
-  zoom: 140%;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
   color: #800020; /* bordeaux */
   position: relative;
@@ -100,38 +150,15 @@ main {
 .titre-content h1 {
   position: relative;
   text-align: center;
-  font-size: 25px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #800020; /* bordeaux */
 	text-shadow:
 	-1px -1px 0 #fff,
 	 1px -1px 0 #fff,
 	-1px  1px 0 #fff,
 	 1px  1px 0 #fff;
-}
-
-/* BARRE DE RECHERCHE HEADER (blanche) */
-.search-header {
-  padding: 12px 20px;
-  border-radius: 30px;
-  border: none;
-  width: 220px;
-  font-size: 16px;
-  background: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* BARRE DE RECHERCHE PAGE PRODUITS (rouge bordeaux) */
-.search {
-  display: block;
-  margin: 20px auto 40px;
-  padding: 14px 22px;
-  width: 60%;
-  max-width: 500px;
-  border-radius: 30px;
-  border: 2px solid #800020;
-  font-size: 16px;
-  background: rgba(128,0,32,0.08); /* rouge bordeaux très transparent */
 }
 
 /* ===============================
@@ -224,62 +251,6 @@ main {
 .btn-secondary:hover {
   background: #800020;
   color: white;
-}
-
-/* ===============================
-   FILTRES
-================================ */
-.filter-dropdown {
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.filter-btn {
-  background: #78001e; /* rouge bordeaux */
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.filter-options {
-  display: none;
-  position: absolute;
-  background: white;
-  min-width: 160px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  z-index: 100;
-  padding: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.filter-options label {
-  display: block;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.filter-dropdown.show .filter-options {
-  display: block;
-}
-
-/* ===============================
-   FILTRE PRIX AVEC AFFICHAGE
-================================ */
-.price-filter {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.price-filter input[type="range"] {
-  flex: 1;
-  border-radius: 30px;
 }
 
 /* ===============================
@@ -393,60 +364,6 @@ main {
 
 #popup-prev{ left:-50px; }
 #popup-next{ right:-50px; }
-
-/* PAGINATION */
-
-/*
-.pagination {
-  display: flex;
-  justify-content: center;
-  list-style: none; 
-  padding: 0px;
-}
-
-.pagination li a {
-  display: block; 
-  padding: 8px 12px;
-  text-decoration: none;
-  border: 1px solid gray;
-  color: black;  
-  margin: 0 4px;
-  border-radius: 5px; /* add rounded borders */
-}
-
-/* Pagination Bouton et compteur */
-
-.pagination {
-  position:bottom;
-  bottom: 1%;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  margin: 10px 15px; 
-  gap: 10px; /* espace entre les boutons et le compteur */
-}
-
-
-
-.pagination button {
-  zoom: 90%;
-  background: #78001e; /* rouge bordeaux */
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.pagination span {
-  zoom: 90%;
-  color: blue;
-  font-size: 20px;
-  font-weight: bold;
-  color: #78001e;
-  padding: 0 8px; /* espace autour du compteur pour ne pas coller aux boutons */
-}
 
 /* ===============================
    PAGE CONTACT
