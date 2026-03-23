@@ -31,10 +31,7 @@ main {
 /* ===============================
    HEADER
 ================================ */
-
-
 .header {
-
 
   /* Papier froissé bleu */
   background-image: 
@@ -42,8 +39,7 @@ main {
     url("images/header-texture.png");
   background-repeat: repeat;
   background-size: cover;
-  
-    padding: 5px 50px;
+  padding: 5px 50px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -57,12 +53,10 @@ header p{
 }
 
 .header1 {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
+  
 }
 
 .paginationTot{
@@ -70,8 +64,6 @@ header p{
 }
 
 /* PAGINATION */
-
-
 .pagination-consigne{
 text-align: center;
 
@@ -118,6 +110,7 @@ text-align: center;
 .navbar {
   display: flex;
   gap: 30px;
+  padding: 5px 10px;
 }
 
 .iconNavBar img {
