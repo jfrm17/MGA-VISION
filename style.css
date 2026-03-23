@@ -501,4 +501,7 @@ footer {
     gap: 20px;
     justify-content: center;
   }
+.navbar a {
+  font-size: 20px;
+}
 }
