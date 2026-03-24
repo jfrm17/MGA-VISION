@@ -1305,10 +1305,10 @@
     const popupImgf = document.getElementById('popup-imgf');
 	const popupImgp = document.getElementById('popup-imgp');
     const popupTitle = popup.querySelector('h2');
-    const popupMarque = popup.querySelectorAll('p')[0];
-	const popupReference = popup.querySelectorAll('p')[1];
-    const popupCouleur = popup.querySelectorAll('p')[2];
-    const popupPrix = popup.querySelectorAll('p')[3];
+    const popupMarque = popup.querySelectorAll('p')[1];
+	const popupReference = popup.querySelectorAll('p')[2];
+    const popupCouleur = popup.querySelectorAll('p')[3];
+    const popupPrix = popup.querySelectorAll('p')[5];
     const closeBtn = document.getElementById('popup-close');
     const prevBtn = document.getElementById('popup-prev');
     const nextBtn = document.getElementById('popup-next');
@@ -1319,7 +1319,7 @@
   const nextBtnP = document.getElementById("nextPage");
   const pageInfo = document.getElementById("pageInfo");
 
-  const ITEMS_PER_PAGE = 16;
+  const ITEMS_PER_PAGE = 30;
   let currentPage = 1;
   let filteredItems = [...items];
 
@@ -1329,7 +1329,7 @@
       popupImgf.src = item.dataset.imgf;
 	  popupImgp.src = item.dataset.imgp;
       popupTitle.textContent = item.querySelector('p').textContent;
-      popupMarque.textContent = "Marque : " + item.dataset.marque;
+/*      popupMarque.textContent = "Marque : " + item.dataset.marque; */
       popupReference.textContent = "Modele : " + item.dataset.reference;
       popupCouleur.textContent = "Couleur : " + item.dataset.couleur;
       popupPrix.textContent = "Prix : " + item.dataset.prix;
@@ -1401,7 +1401,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("nextPage");
   const pageInfo = document.getElementById("pageInfo");
 
-  const ITEMS_PER_PAGE = 16;
+  const ITEMS_PER_PAGE = 30;
   let currentPage = 1;
   let filteredItems = [...items];
 
