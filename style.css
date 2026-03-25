@@ -476,7 +476,7 @@ footer {
 
 .footer-menu a {
 	margin-left : 15px;
-	font-size: 12px;
+	font-size: 15px;
 	color: white;
 	text-decoration: none;
 }
@@ -488,7 +488,7 @@ footer {
 .footer-copy {
 	margin-top: 20px;
 	margin-right: 10px;
-	font-size: 9px;
+	font-size: 10px;
 	color: yellow;
 }
 
@@ -553,6 +553,11 @@ footer {
 	margin-bottom:15px;
 	}
 
+	footer {
+		zoom: 90%;
+		height : 45px;
+	}
+
 	.footer {
 		display: block;
 		text-align: center;
@@ -567,20 +572,14 @@ footer {
 	}
 
 	.footer-menu a {
-		margin-left: 5px;
+		margin-left : 10px;
 		font-size: 12px;
 		color: white;
 		text-decoration: none;
 	}
 
-	.footer-menu a:hover {
-		text-decoration: underline;
-	}
-
 	.footer-copy {
 		margin-top: 0;
 		margin-right: 0;
-		font-size: 9px;
-		color: yellow;
 	}
 }
